@@ -99,10 +99,10 @@ public class SwiftSiriWaveformView : UIView {
         }
         
         let context = UIGraphicsGetCurrentContext()
-        CGContextSetAllowsAntialiasing(context, true)
+        CGContextSetAllowsAntialiasing(context!, true)
         
         self.backgroundColor?.set()
-        CGContextFillRect(context, rect)
+        CGContextFillRect(context!, rect)
         
         let halfHeight = self.bounds.height / 2.0
         let maxAmplitude = halfHeight - self.primaryLineWidth
